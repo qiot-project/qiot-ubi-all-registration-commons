@@ -1,0 +1,1 @@
+# qiot-ubi-all-registration-commons
