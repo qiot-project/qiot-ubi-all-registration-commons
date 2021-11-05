@@ -22,6 +22,12 @@ public class CertificateResponse {
     @JsonProperty("truststore")
     public String truststore;
 
+    // For isCA only
+    @JsonProperty("tlsCert")
+    public String tlsCert;
+    @JsonProperty("tlsKey")
+    public String tlsKey;
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
@@ -29,6 +35,10 @@ public class CertificateResponse {
         builder.append(truststore);
         builder.append(", keystore=");
         builder.append(keystore);
+        builder.append(", tlsCert=");
+        builder.append(tlsCert);
+        builder.append(", tlsKey=");
+        builder.append(tlsKey);
         builder.append("]");
         return builder.toString();
     }

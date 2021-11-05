@@ -14,10 +14,6 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  * @author mmascia
  * @author andreabattaglia
  */
-/**
- * @author andreabattaglia
- *
- */
 @JsonPropertyOrder(value = { "id", "name", "domain", "serial",
         "keyStorePassword", "ca" })
 @RegisterForReflection
