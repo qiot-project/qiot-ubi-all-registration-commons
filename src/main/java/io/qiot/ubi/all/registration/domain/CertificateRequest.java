@@ -38,7 +38,7 @@ public class CertificateRequest {
      * <li><b>Machinery</b>: domain = "." + factoryId</li>
      * </ul>
      */
-    @JsonProperty(value = "domain")
+    @JsonProperty(value = "domain", defaultValue = "")
     @NotNull
     public String domain;
     /**

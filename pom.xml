@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.qiot.ubi.all</groupId>
     <artifactId>registration-commons</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <parent>
         <groupId>io.qiot.ubi</groupId>
         <artifactId>parent</artifactId>
