@@ -1,12 +1,18 @@
 package io.qiot.ubi.all.registration.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
  * @author mmascia
+ * @author andreabattaglia
  * 
  **/
-public class CAIssuerRequest implements IssuerRequest {
+@JsonPropertyOrder(value = { "tlsCert", "tlsKey"})
+@RegisterForReflection
+public class CAIssuerRequest {
     
     public static final String TLS_CERT = "tls.crt";
     public static final String TLS_KEY = "tls.key";

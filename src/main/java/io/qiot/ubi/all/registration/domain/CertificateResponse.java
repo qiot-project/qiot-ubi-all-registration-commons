@@ -14,7 +14,7 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  * @author andreabattaglia
  *
  */
-@JsonPropertyOrder(value = { "keystore", "truststore" })
+@JsonPropertyOrder(value = { "keystore", "truststore", "tlsCert", "tlsKey"})
 @RegisterForReflection
 public class CertificateResponse {
     @JsonProperty("keystore")
