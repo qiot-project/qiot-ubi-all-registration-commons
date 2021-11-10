@@ -17,7 +17,7 @@ import io.qiot.ubi.all.registration.domain.CertificateResponse;
  * @author andreabattaglia
  *
  */
-@Path("/v1/register")
+@Path("/v1")
 @RegisterRestClient(configKey = "registration-service-api")
 public interface RegistrationServiceClient {
 
@@ -26,7 +26,7 @@ public interface RegistrationServiceClient {
      * @return
      */
     @POST
-    @Path("/")
+    @Path("/register")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public CertificateResponse provisionCertificate(CertificateRequest request);
