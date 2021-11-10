@@ -1,2 +1,2 @@
 # qiot-ubi-all-registration-commons
-Release 1.0.6
+Release 1.0.7
