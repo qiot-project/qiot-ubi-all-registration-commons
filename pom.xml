@@ -14,43 +14,38 @@
         <url>https://github.com/qiot-project/qiot-ubi-all-registration-commons</url>
         <tag>HEAD</tag>
     </scm>
-    <repositories>
+      <repositories>
         <repository>
-            <id>qiot-central</id>
-            <name>a0lz61zjcqpyh-artifactory-primary-0-releases</name>
-            <url>https://${env.ARTIFACTORY_HOSTNAME}/artifactory/${env.ARTIFACTORY_RELEASE_REPO}</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>hackfest-libs-release</name>
+          <url></url>
         </repository>
         <repository>
-            <id>qiot-snapshots</id>
-            <name>a0lz61zjcqpyh-artifactory-primary-0-snapshots</name>
-            <url>https://${env.ARTIFACTORY_HOSTNAME}/artifactory/${env.ARTIFACTORY_SNAPSHOT_REPO}</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
+          <snapshots />
+          <id>snapshots</id>
+          <name>hackfest-libs-snapshot</name>
+          <url>https://hackfest.jfrog.io/artifactory/hackfest-libs-snapshot</url>
         </repository>
-    </repositories>
-
-    <pluginRepositories>
+      </repositories>
+      <pluginRepositories>
         <pluginRepository>
-            <id>qiot-central</id>
-            <name>a0lz61zjcqpyh-artifactory-primary-0-releases</name>
-            <url>https://${env.ARTIFACTORY_HOSTNAME}/artifactory/${env.ARTIFACTORY_RELEASE_REPO}</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>hackfest-libs-release</name>
+          <url>https://hackfest.jfrog.io/artifactory/hackfest-libs-release</url>
         </pluginRepository>
         <pluginRepository>
-            <id>qiot-snapshots</id>
-            <name>a0lz61zjcqpyh-artifactory-primary-0-snapshots</name>
-            <url>https://${env.ARTIFACTORY_HOSTNAME}/artifactory/${env.ARTIFACTORY_SNAPSHOT_REPO}</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
+          <snapshots />
+          <id>snapshots</id>
+          <name>hackfest-libs-snapshot</name>
+          <url>https://hackfest.jfrog.io/artifactory/hackfest-libs-snapshot</url>
         </pluginRepository>
-    </pluginRepositories>
+      </pluginRepositories>
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
